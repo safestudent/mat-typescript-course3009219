@@ -60,6 +60,8 @@ typings/
 # next.js build output
 .next
 
+# We've added these
+
 node_modules/
 out/
 e2ejs/
