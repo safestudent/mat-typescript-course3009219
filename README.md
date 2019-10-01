@@ -1,14 +1,3 @@
-# mat-typescript-course3009219
+# Steps to commit and push the project code:
 
-Normal text
-
-## Header 2
-
-Some code here: `print something` etc
-
-Test commit
-
-Hello world!
-f
-
-fdsfds
+1. 
