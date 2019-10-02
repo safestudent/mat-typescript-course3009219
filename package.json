@@ -4,7 +4,11 @@
   "description": "Test Automation framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protractor ./e2ejs/protractor.conf.js",
+    "build": "tsc",
+    "clean": "rimraf e2ejs",
+    "clean-build": "npm run clean && npm run build",
+    "docs": "typedoc --out ./out --exclude **/node_modules/** --excludeExternals --excludeNotExported --excludePrivate --excludeProtected ."
   },
   "repository": {
     "type": "git",
@@ -24,8 +28,10 @@
     "protractor": "^5.4.2",
     "protractor-cucumber-framework": "^6.1.3",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
+    "rimraf": "^3.0.0",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
+    "typedoc": "^0.15.0",
     "typescript": "^3.6.3"
   },
   "dependencies": {
